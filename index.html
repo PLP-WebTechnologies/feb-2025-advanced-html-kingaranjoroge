@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <!-- ordered list -->
+     <ol type="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+     </ol>
+
+     <!-- external image -->
+      <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" alt="An external image from pexels.com">
+
+      <!-- table -->
+       <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Elm Street, New York</td>
+                <td>+1 234 567 890</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Avenue, Los Angeles</td>
+                <td>+1 987 654 321</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Johnson</td>
+                <td>789 Maple Drive, Chicago</td>
+                <td>+1 567 890 123</td>
+                <td>michael.johnson@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>101 Pine Road, San Francisco</td>
+                <td>+1 345 678 901</td>
+                <td>emily.davis@example.com</td>
+            </tr>
+            <tr>
+                <td>Robert Brown</td>
+                <td>202 Birch Lane, Miami</td>
+                <td>+1 789 012 345</td>
+                <td>robert.brown@example.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center; font-weight: bold;">
+                    Total Contacts: 5
+                </td>
+            </tr>
+        </tfoot>        
+       </table>
+
+       <!-- registration form -->
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name" required>
+          
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" required>
+          
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="enter your password" required minlength="6">
+          
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <!-- dropdown -->
+             <label for="city">City</label>
+             <select name="city" id="city" required>
+                <option value="">Select your City</option>
+                <option value="nrb">Nairobi</option>
+                <option value="msa">Mombasa</option>
+                <option value="ksm">Kisumu</option>
+                <option value="nkr">Nakuru</option>
+             </select>
+
+             <!-- radio buttons -->
+              <label>Gender</label>
+              <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+              </div>
+
+              <!-- checkboxes -->
+              <label for="">Interests</label>
+              <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="swimming">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="travel" name="travel" value="travel">
+                <label for="travel">Travel</label>
+              </div>
+
+              <!-- button -->
+              <button type="submit">Register</button>
+        </form>
+</body>
+</html>
